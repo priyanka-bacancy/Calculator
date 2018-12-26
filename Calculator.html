@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Calculator</title>
+	<style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  background-color: #f2f2f2;
+  background-position: center center;
+  margin-top: 2%;
+}
+
+.button {
+  background-color: white;
+  border-color:  black;
+  color: black;
+  padding: 6px 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: auto;
+  cursor: pointer;
+}
+
+center{
+	margin-top: 8%;
+}
+
+</style>
+</head>
+</head>
+<body>
+	<h1 style="font-size: 65px"><center>Calculator</center></h1>
+	<div class="center" style="height: 335px;width: 295px; border: 2px  solid black"; id="cntr">
+	<div class="center" style="height: 300px;width: 259px; border: 2px  solid black"; id="cntr">
+
+	<table align="center">
+		
+
+		<tr>
+			<td colspan="4" id="txt1"></td>
+		</tr>
+		<tr>
+			<td colspan="4"><input type="text" name="txt" id="txt" style="display: inline-block;height: 25px; width: 220px;margin-left :5px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px; font-size: 20px"></td>
+		</tr>
+		
+		<tr>
+			<td><input class="button" type="button" class="button" value="C" id="clrbtn" onclick="clrtxt()"></td>
+			
+		</tr>
+
+		<tr>
+			<td><input type="button" class="button" value="7" id="btn7" onclick="display(btn7.value)"></td>
+			<td><input type="button" class="button" value="8" id="btn8" onclick="display(btn8.value)"></td>
+			<td><input type="button" class="button" value="9" id="btn9" onclick="display(btn9.value)"></td>
+			<td><input type="button" class="button" value="-" id="subbtn" onclick="display(subbtn.value)"></td>
+			
+			
+		</tr>
+		<tr>
+			<td><input type="button" class="button" value="4" id="btn4" onclick="display(btn4.value)"></td>
+			<td><input type="button" class="button" value="5" id="btn5" onclick="display(btn5.value)"></td>
+			<td><input type="button" class="button" value="6" id="btn6" onclick="display(btn6.value)"></td>
+			<td><input type="button" class="button" value="*" id="mulbtn" onclick="display(mulbtn.value)"></td>
+			
+		</tr>
+		<tr>
+			<td><input type="button" value="1" class="button" id="btn1" onclick="display(btn1.value)"></td>
+			<td><input type="button" value="2" class="button" id="btn2" onclick="display(btn2.value)"></td>
+			<td><input type="button" value="3" class="button" id="btn3" onclick="display(btn3.value)"></td>
+			<td><input type="button" class="button" value="+" id="addbtn" onclick="display(addbtn.value)"></td>
+			
+			
+		</tr>
+		<tr>
+			<td><input type="button" value="." class="button" id="point" onclick="display(point.value)"></td>
+			<td><input type="button" value="0" class="button" id="zero" onclick="display(zero.value)"></td>
+			<td><input type="button" class="button" value="/" id="divbtn" onclick="display(divbtn.value)"></td>
+			<td colspan="2"><input type="button" class="button" id="ansbtn" value="=" onclick="txt.value = eval(txt.value)"></td>
+			
+		</tr>
+
+	</table>
+		</div>
+	</div>
+	<script type="text/javascript" src="Calculator_JsFile.js">
+		
+	</script>
+</body>
+</html>
